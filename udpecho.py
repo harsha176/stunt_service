@@ -89,7 +89,7 @@ def client():
 		port = ECHO_PORT
 
 	if len(sys.argv) > 4:
-		priv_ip = eval(sys.argv[4])
+		priv_ip = sys.argv[4]
 
 	addr = host, port
 	s = socket(AF_INET, SOCK_DGRAM)
